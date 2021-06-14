@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de Utíles</title>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/general.css" type="text/css">
+    <link rel="stylesheet" href="./css/perfil_ce.css">
+    <link rel="stylesheet" href="/public/css/popr.css">
+    <link rel="stylesheet" href="/public/css/menu_nav/dropdown.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="main_header">
+        <nav>
+            <img class="img_logo" src="./images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <div class="float-right middle2">
+                <!--<lable class="white mr-1">Buscar</lable>
+                                        <input type="text" value="" name="" id="txtFiltro" class="input">-->
+                <div class="float-right mr-2">
+
+                    <div id="menu_right_icons">
+                        <div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+                        <div class="avatar_cont"><img src="" id="avatar_img"></div>
+                    </div>
+
+                </div>
+
+                <div id="avatar_container" style="margin-right: 100px;">
+
+                    <div class="popr-box" data-box-id="2">
+                        <a href="perfil_centroedu.html">
+                            <div class="popr-item" id="">Ver perfil</div>
+                        </a>
+
+                        <a href="/public/centroeducativo/modificar_centroe.html">
+                            <div class="popr-item" id="">Editar perfil</div>
+                        </a>
+
+                        <a href="/public/cambiar_clave_i.html">
+                            <div class="popr-item" id="">Cambiar clave</div>
+                        </a>
+
+                        <a href="/public/index.html" onclick="localStorage.clear();">
+                            <div class="popr-item">Cerrar sesión</div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div style="clear:both; margin-bottom: 20px;"></div>
+        <div class="fondonav">
+            <nav>
+                <ul>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Noticias</button>
+                        <div class="dropdown-content">
+                            <a class="color_text" href="registro_noticias.html">Registrar noticias</a>
+                            <a class="color_text" href="listar_noticias.html">Lista de noticias</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Actividades</button>
+                        <div class="dropdown-content">
+                            <a class="color_text" href="registro_actividad.html">Registrar actividad</a>
+                            <a class="color_text" href="listar_actividad.html">Lista de actividades</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Útiles</button>
+                        <div class="dropdown-content">
+                            <a class="color_text" href="registrar_utiles.html">Registrar útiles</a>
+                            <a class="color_text" href="listar_utiles.html">Lista de útiles</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Etiquetas y citas</button>
+                        <div class="dropdown-content">
+                            <a class="color_text" href="etiqueta_centroe.html">Lista de etiquetas</a>
+                            <a class="color_text" href="/public/listar_citas.html">Lista de citas</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Servicios</button>
+                        <div class="dropdown-content">
+                            <a class="color_text" href="registrar_servicios.html">Registrar servicio</a>
+                            <a class="color_text" href="listar_servicios.html">Lista de servicios</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+
+
+
+        </div>
+    </header>
+
+    <main class="main_utiles">
+
+
+        <h1 class="h1">Lista de útiles</h1>
+        <table width="800" id="tabla_listar_utiles" align="center" class="tabla_info">
+            <thead class="head_backg">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Ciclo</th>
+                    <th>Nivel</th>
+                    <th>Año</th>
+                    <th>Útil</th>
+                    <th>Cantidad</th>
+                    <th>Opciones</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+
+
+
+
+
+
+
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="./index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="./faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/transacciones/servicio_transaccion.js"></script>
+    <script src="/public/js/registro_utiles/servicio_utiles.js"></script>
+    <script src="/public/js/registro_utiles/controlador_regutiles.js"></script>
+    <script src="/public/js/registro_utiles/controlador_listar_utiles.js"></script>
+
+    <!-- Servicio para obtener el menu de avatar e imagen de avatar-->
+
+    <script src="/public/js/centro_educativo/servicio_ce.js"></script>
+    <script src="/public/js/centro_educativo/controlador_avatar_ce.js"></script>
+    <script src="/public/js/popmenu/popr.js"></script>
+
+</body>
+
+</html>

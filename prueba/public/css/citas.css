@@ -1,0 +1,88 @@
+.buscar {
+	width: 150px;
+	height: 35px;
+	border: #6D6D6D solid 1px;
+	border-radius: 5px;
+}
+
+section #frm_citas{
+    box-shadow: 0 4px 8px 0 #143646;
+    padding: 20px;
+    width: 780px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    height: 400px;
+}
+
+section #frm_citas div{
+    padding: 10px;
+}
+
+section #frm_citas input{
+		width: 200px;
+		height: 35px;
+		border: #48dbfb solid 1px;
+		border-radius: 5px;
+}
+
+section #frm_citas select{
+	width: 200px;
+	height: 35px;
+	border: #48dbfb solid 1px;
+	border-radius: 5px;
+}
+
+.highlight_citas {
+    background-color: #d63031;
+    color: #d63031;
+}
+
+.white {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.mr-1 {
+	margin-right: 20px;
+}
+.mr-2 {
+	margin-right: 50px;
+}
+		
+.ml-1 {
+	margin-left: 20px;
+}
+		
+.ml-2 {
+	margin-left: 40px;
+}
+.mt-1 {
+	margin-top: 40px;
+}
+.mt-2 {
+	margin-top: 20px;
+}
+.mt-3 {
+	margin-top: 90px;
+}
+.mt-4 {
+	margin-top: 10px;
+}
+.mb-1 {
+	margin-bottom: 20px;
+}
+
+.largo {
+    height: auto;
+}
+
+.lable {
+	font-size: 18px;		
+}
+
+section #frm_citas .error_input {
+    border: 2px solid #ED4C67;
+}

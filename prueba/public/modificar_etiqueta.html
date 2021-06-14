@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+    <link rel="stylesheet" href="/public/css/banner_rce.css">
+    <link rel="stylesheet" href="/public/css/registro_ce.css">
+    <link rel="stylesheet" href="/public/css/etiquetas.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <title>Registrar etiqueta</title>
+    <style>
+    .middle2 {
+        margin-top: 50px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <header class="main_header">
+        <nav>
+                <img class="img_logo" src="./images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+                <div class="float-right mr-1">
+                    <div class="float-right middle2">
+                        <a href="listar_solicitudes.html" class="registrar_cuenta ml-1">Listar solicitudes</a>
+                        <a href="listar_usuarios.html" class="registrar_cuenta ml-1">Listar usuarios</a>
+                        <a href="registrar_etiqueta.html" class="registrar_cuenta ml-1">Registrar etiqueta</a>
+                        <a href="index.html" class="cerrar_sesion ml-1" onclick="localStorage.clear();">Cerrar Sesión</a>
+                    
+                    </div>
+            </div>
+        </nav>
+    </header>
+
+            <main class="mt-3" style="height: 400px;">
+
+                    <div class="form_backgorund">
+                        <h1 class="h1_notica color_text p-t1">Modificar etiqueta</h1>
+                        <section>
+                            <!-- Formulario de registro de citas -->
+                            <form id="frm_noticias" class="form-control">
+            
+                                <label for="txt_nombre" class="label_name color_text">Nombre:</label>
+                                <input class="form-control" type="text" id="txt_nombre">
+                    
+                                <div class="registro">
+                                        <button type="button" id="btn_registrar">Enviar</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+            
+                </main>
+        
+
+
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="./index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="./faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="js/transacciones/servicio_transaccion.js"></script>
+<script src="/public/js/etiquetas/servicio_etiquetas.js"></script>
+<script src="/public/js/etiquetas/modificar_etiqueta.js"></script>
+
+
+
+
+
+
+</html>

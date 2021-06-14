@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+    <link rel="stylesheet" href="/public/css/perfil_ce.css">
+    <link rel='stylesheet' href='/public/css/rating/laxvek.css'>
+    <link rel='stylesheet' href='/public/css/rating/style.css'>
+    <link rel="stylesheet" href="/public/css/popr.css">
+    <link rel="stylesheet" href="/public/css/menu_nav/dropdown.css">
+    <link rel="stylesheet" href="./css/registro_ce.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+
+
+    <title>Rating de Centro Educativo</title>
+</head>
+
+<body>
+
+        <header class="main_header">
+                <nav>
+                    <img class="img_logo" src="./images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+                    <div class="float-right middle2">
+                        <!--<lable class="white mr-1">Buscar</lable>
+                                        <input type="text" value="" name="" id="txtFiltro" class="input">-->
+                        <div class="float-right mr-2">
+        
+                            <div id="menu_right_icons">
+                                <div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+                                <div class="avatar_cont"><img src="" id="avatar_img"></div>
+                            </div>
+        
+                        </div>
+        
+                        <div id="avatar_container" style="margin-right: 100px;">
+        
+                            <div class="popr-box" data-box-id="2">
+                                <a href="perfil_admin.html">
+                                    <div class="popr-item" id="">Ver Perfil</div>
+                                </a>
+        
+                                <a href="/public/index.html" onclick="localStorage.clear();">
+                                    <div class="popr-item">Cerrar Sesion</div>
+                                </a>
+                            </div>
+                        </div>
+        
+                    </div>
+                </nav>
+                <div style="clear:both; margin-bottom: 20px;"></div>
+                <div class="fondonav">
+                    <nav>
+                        <ul>
+        
+                            <div class="dropdown">
+                                <button class="dropbtn">Preguntas frecuentes</button>
+                                <div class="dropdown-content">
+                                    <a class="color_text" href="registro_pregunta.html">Registrar pregunta frecuente</a>
+                                    <a class="color_text" href="listar_pregunta.html">Listar pregunta frecuente</a>
+                                </div>
+                            </div>
+        
+                            <div class="dropdown">
+                                <button class="dropbtn">Etiquetas</button>
+                                <div class="dropdown-content">
+                                    <a class="color_text" href="registrar_etiqueta.html">Registrar etiqueta</a>
+                                    <a class="color_text" href="lista_etiquetas.html">Lista de etiquetas</a>
+                                </div>
+                            </div>
+        
+                            <div class="dropdown">
+                                <button class="dropbtn">Usuarios y solicitudes</button>
+                                <div class="dropdown-content">
+                                    <a class="color_text" href="listar_solicitudes.html">Lista de solicitudes</a>
+                                    <a class="color_text" href="listar_usuarios.html">Lista de usuarios</a>
+                                    <a class="color_text" href="listar_trasacciones.html">Lista de transacciones</a>
+
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+        
+        
+        
+                </div>
+            </header>
+
+    <section id="rating_container" class='rating-widget'>
+        <h1 class="h1">Registro ranking del MEP</h1>
+        <div>
+            <img src="" id="imagen_perfil" width="130px">
+            <h1 class="h1" id="h1"></h1>
+        </div>
+
+        <!-- Rating Stars Box -->
+        <div class='rating-stars text-center'>
+            <ul id='stars'>
+                <li class='star' title='Poor' data-value='1'>
+                    <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                    <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                    <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                    <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                    <i class='fa fa-star fa-fw'></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class='success-box'>
+            <div class='clearfix'></div>
+            <img alt='tick image' width='32' src='data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM2QUMyNTk7IiBkPSJNMjEzLjMzMywwQzk1LjUxOCwwLDAsOTUuNTE0LDAsMjEzLjMzM3M5NS41MTgsMjEzLjMzMywyMTMuMzMzLDIxMy4zMzMgIGMxMTcuODI4LDAsMjEzLjMzMy05NS41MTQsMjEzLjMzMy0yMTMuMzMzUzMzMS4xNTcsMCwyMTMuMzMzLDB6IE0xNzQuMTk5LDMyMi45MThsLTkzLjkzNS05My45MzFsMzEuMzA5LTMxLjMwOWw2Mi42MjYsNjIuNjIyICBsMTQwLjg5NC0xNDAuODk4bDMxLjMwOSwzMS4zMDlMMTc0LjE5OSwzMjIuOTE4eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K' />
+            <div class='text-message'></div>
+            <div class='clearfix'></div>
+        </div>
+
+        <div>
+            <button type="button" id="btn_registrar">Enviar</button>
+        </div>
+
+    </section>
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="./index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="./faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="/public/js/padres_de_familia/servicio_padrefamilia.js"></script>
+    <script src="/public/js/padres_de_familia/controlador_avatar_pf.js"></script>
+    <script src="/public/js/rating/laxvek.js"></script>
+    <script src="/public/js/rating/index.js"></script>
+    <script src="/public/js/rating/servicio_rating.js"></script>
+    <script src="/public/js/popmenu/popr.js"></script>
+    <script src="/public/js/servicio_rating_mep.js"></script>
+    <script src="/public/js/agregar_rating.js"></script>
+
+
+</body>
+
+
+</html>

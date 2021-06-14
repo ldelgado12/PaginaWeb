@@ -1,0 +1,72 @@
+.menu {
+    float: right;
+    margin-right: 30px;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    display:inline-block;
+}
+
+.menu a {
+    display:block;
+    color: #192a56;
+    font-size:16px;
+    text-decoration:none;
+    padding: 10px 10px;
+}
+
+.menu a:hover {
+    background-color: #dfe6e9;
+}
+
+/* Hide Dropdowns by Default */
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 45px; /* the height of the main nav */
+
+}
+
+/* Display Dropdowns on Hover */
+.menu ul li:hover > ul {
+    display:inherit;
+}
+
+.menu ul li a {
+
+}
+
+.menu ul li ul li a{
+    padding: 4px 29px 5px 29px;
+}
+
+.menu ul li ul li a:hover{
+    color: #333;
+    background-color: #dcdcdc;
+}
+/* Fisrt Tier Dropdown */
+.menu ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+.menu ul ul ul li {
+    position: relative;
+    top:-60px;
+    left:170px;
+}
+
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }

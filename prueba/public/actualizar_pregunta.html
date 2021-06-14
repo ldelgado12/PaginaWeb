@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Actualizar Actividad</title>
+<link rel="stylesheet" href="/public/css/reset.css" type="text/css">
+	<link rel="stylesheet" href="/public/css/general.css" type="text/css">
+	<link rel="stylesheet" href="/public/css/activdad.css" type="text/css">
+	<link rel="stylesheet" href="/public/css/popr.css">
+	<link rel="stylesheet" href="/public/css/menu_nav/dropdown.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<style>
+		.campito{
+			width: 350px;
+		}
+	</style>
+</head>
+<body>
+	<header class="main_header">
+		<nav>
+			<img class="img_logo" src="./images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+			<div class="float-right middle2">
+				<!--<lable class="white mr-1">Buscar</lable>
+								<input type="text" value="" name="" id="txtFiltro" class="input">-->
+				<div class="float-right mr-2">
+
+					<div id="menu_right_icons">
+						<div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+						<div class="avatar_cont"><img src="" id="avatar_img"></div>
+					</div>
+
+				</div>
+
+				<div id="avatar_container" style="margin-right: 100px;">
+
+					<div class="popr-box" data-box-id="2">
+						<a href="perfil_admin.html">
+							<div class="popr-item" id="">Ver Perfil</div>
+						</a>
+
+						<a href="/public/index.html" onclick="localStorage.clear();">
+							<div class="popr-item">Cerrar Sesion</div>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+		<div style="clear:both; margin-bottom: 20px;"></div>
+		<div class="fondonav">
+			<nav>
+				<ul>
+
+					<div class="dropdown">
+						<button class="dropbtn">Preguntas frecuentes</button>
+						<div class="dropdown-content">
+							<a class="color_text" href="registro_pregunta.html">Registrar pregunta frecuente</a>
+							<a class="color_text" href="listar_pregunta.html">Listar pregunta frecuente</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">Etiquetas</button>
+						<div class="dropdown-content">
+							<a class="color_text" href="registrar_etiqueta.html">Registrar etiqueta</a>
+							<a class="color_text" href="lista_etiquetas.html">Lista de etiquetas</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">Usuarios y solicitudes</button>
+						<div class="dropdown-content">
+							<a class="color_text" href="listar_solicitudes.html">Lista de solicitudes</a>
+							<a class="color_text" href="listar_usuarios.html">Lista de usuarios</a>
+						</div>
+					</div>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="largo mt-3" style="height: 500px;">
+		<section id="acti">
+			<div class="form_backgorund">
+			<h1 class="h1-actividad color_text p-t1">Actualizar Preguntas Frecuentes</h1>
+			<div class="centro p-t1">
+			<form class="form_control">
+					<lable for="txt_pregunta" class="lable color_text">Pregunta Frecuente</lable>
+					<input class="input_titulo_acti" type="text" id="txt_pregunta">
+					<lable for="txt_respuesta" class="lable color_text">Respuesta</lable> 
+					<textarea id="txt_respuesta" class="input_actividad campito"></textarea>
+					<button type="button" id="btn_actualizar">Actualizar</button>
+			</form>
+			</div>
+			</div>
+		</section>
+	</main>
+	<footer class="main_footer">
+		<p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+		<nav class="footer_nav mt-2 ml-1">
+			<a href="./index.html">Inicio</a><span class="vertical-line"> | </span>
+			<a href="./faq.html">FAQ</a><span class="vertical-line"> | </span>
+			<a href="./contacto.html">Contacto</a>
+		</nav>
+	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+
+	<script src="/public/js/admin/servicio_admin.js"></script>
+
+	<script src="js/transacciones/servicio_transaccion.js"></script>
+	<script src="./js/pregunta/servicio_preguntas.js"></script>
+	<script src="./js/pregunta/controlador_actualizar_preguntas.js"></script>
+
+	<script src="/public/js/admin/controlador_avatar_admin.js"></script>
+	<script src="/public/js/popmenu/popr.js"></script>
+	
+</body>
+</html>

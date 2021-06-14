@@ -1,0 +1,300 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    font-family: Nunito, 'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+b{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	margin: 5px;
+	border: 1px;
+
+	border-color:  rgb(0, 0, 0);
+}  
+
+.color_text {
+	color: #192a56;
+}
+
+.h1 {
+	font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+	color: #2f3640;
+	text-align: center;
+}
+
+.float-right {
+	float: right;
+}
+		
+.float-left {
+	float: left;
+}
+
+.white {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.error_input {
+	border: 2px solid #ed4c67;
+}
+
+/* Boton de Registrar */
+#btn_registrar {
+            background-color: #f27232; 
+            padding: 10px;
+            width: 170px;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            -webkit-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+            box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+            clear: both;
+		}
+
+#btn_actualizar{
+	background-color: #f27232; 
+            padding: 10px;
+            width: 170px;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            -webkit-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+            box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+            clear: both;
+}	
+
+/* Estilos header y footer */
+
+.img_logo	{
+	float: left;
+    margin-left: 20px;
+	margin-top: 20px;
+}
+.main_header {
+	background-color: #192a56;
+	width: 100%;
+	height: 120px;
+	margin-bottom: 80px;
+}
+
+.main_header_perfil {
+	background-color: #192a56;
+	width: 100%;
+	height: 120px;
+}
+.registrar_cuenta {
+	padding: 11px;
+	border:#f27232 solid 1px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #fff;
+}
+.registrar_cuenta:hover {
+	padding: 11px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #f27232;
+}
+.iniciar_sesion {
+	padding: 11px;
+	border:#f27232 solid 1px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #fff;
+	
+}
+
+.cerrar_sesion {
+	padding: 11px;
+	border:#f27232 solid 1px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.cerrar_sesion:hover {
+	padding: 11px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #f27232;
+}
+		
+.iniciar_sesion:hover {
+	padding: 11px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #f27232;
+}
+.middle {
+	margin-top: 80px;;
+	margin-bottom: auto;
+}
+
+.main_footer {
+    background-color: #1e272e;
+	width: 100%;
+	height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+}
+		
+.footer_nav a {
+	color: #fff;
+	text-decoration: none;
+}
+		
+.footer_nav a:hover {
+	color: #f27232;
+	text-decoration: none;
+}
+		
+.vertical-line{
+	color: #fff;
+	padding: 15px;
+}
+
+
+
+/* Estilos de la tabla general */
+
+.tabla_info {
+    margin: 30px 0px 30px 0px;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla_info thead tr{
+    background-color: #f27232;
+    color: rgb(105, 97, 97);
+}
+
+.tabla_info tbody tr {
+    border-bottom: 1px solid #3498db;
+}
+
+.tabla_info tbody tr:hover {
+    background: rgba(52,152,219 ,0.4);  /* Se utiliza RGBA por que este formato incluye el opacity incluido */
+}
+
+.tabla_info tr td,.tabla_info tr th{
+    padding: 20px 10px;
+}
+
+.head_backg{
+	background-color: #f27232;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.padding {
+	padding: 20px;
+}
+
+.border-right {
+	border-right: #ffffff solid 2px;
+}
+
+/* Estilos de la tabla centro educativo */
+
+#tbl_centroe, #tbl_centroe_primaria {
+    margin: 30px 0px 30px 0px;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#tbl_centroe tbody tr:hover{
+	background-color: #dfe6e9;
+}
+
+#tbl_centroe_primaria tbody tr:hover{
+	background-color: #dfe6e9;
+}
+
+.col-iz {
+    float: left;
+    width: 400px;
+}
+
+.col-der{
+    float: left;
+}
+
+.main_utiles {
+	box-shadow: 0 4px 8px 0 #143646;
+    padding: 20px;
+    width: 800px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 950px;
+}
+.position-a {
+	position: absolute;
+	bottom: 0px;
+}
+
+/*#tbl_centroe thead tr, #tbl_centroe_primaria thead tr{
+    background-color: #f27232;
+    color: #FFF;
+}
+
+#tbl_centroe tbody tr, #tbl_centroe_primaria tbody tr {
+    border-bottom: 1px solid #3498db;
+}
+
+#tbl_centroe tbody tr:hover, #tbl_centroe_primaria tbody tr:hover {
+    background: rgba(52,152,219 ,0.4);   Se utiliza RGBA por que este formato incluye el opacity incluido 
+}
+
+#tbl_centroe tr td,#tbl_centroe tr th, #tbl_centroe_primaria tr td, #tbl_centroe_primaria tr th{
+    padding: 20px 10px;
+}*/
+
+#modificar {
+	background-image: url(https://img.icons8.com/ios/20/000000/edit.png);
+	cursor: pointer;
+	border: none;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-color: white;
+	display: inline-block;
+	box-shadow: none;
+	height: 21px;
+	width: 21px;
+}
+
+.config{
+	font-size: 14px;
+	color: #ffffff;
+	margin-right: 10px;
+	text-decoration: underline;
+}
+
+
+
+
+
+

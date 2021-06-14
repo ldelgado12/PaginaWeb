@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+    <link rel="stylesheet" href="/public/css/perfil_ce.css">
+    <link rel="stylesheet" href="/public/css/menu_nav/dropdown.css">
+    <link rel="stylesheet" href="/public/css/pregunta.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <style>
+        .eliminar {
+            margin-right: 10px;
+        }
+
+        .eliminar:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main_header">
+        <nav>
+            <img class="img_logo" src="./images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <div class="float-right middle2">
+                <div class="float-right mr-2">
+                    <a href="/public/index.html" class="registrar_cuenta ml-1 width1">Inicio</a>
+                    <a href="/public/registro_centroe.html" class="registrar_cuenta ml-1">Registrar Centro Educativo</a>
+                    <a href="/public/registro_pf.html" class="registrar_cuenta ml-1">Registrar Padre de Familia</a>
+                    <a href="/public/iniciar_sesion.html" class="registrar_cuenta ml-1">Iniciar sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="h1-actividad color_text p-t1">Preguntas Frecuentes</h1>
+        <table id="tbl_pregunta" style="width:1000px;">
+            <thead>
+                <tr>
+                    <th class="padding border-right">Pregunta</th>
+                    <th class="padding border-right">Respuesta</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </main>
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="./index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="./faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="/public/js/admin/servicio_admin.js"></script>
+
+    <script src="./js/pregunta/servicio_preguntas.js"></script>
+    <script src="./js/pregunta/controlador_listar_faq.js"></script>
+
+</body>
+
+</html>

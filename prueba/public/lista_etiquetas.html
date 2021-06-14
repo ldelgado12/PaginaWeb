@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+    <link rel="stylesheet" href="/public/css/perfil_ce.css">
+    <link rel="stylesheet" href="/public/css/popr.css">
+    <link rel="stylesheet" href="/public/css/menu_nav/dropdown.css">
+    <link rel="stylesheet" href="/public/css/etiquetas.css">
+    <link rel="stylesheet" href="./css/tabla_centros/listar_centros.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+    <title>Lista de etiquetas</title>
+</head>
+
+<body>
+
+    <header class="main_header">
+    <nav>
+        <img class="img_logo" src="./images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+        <div class="float-right middle2">
+            <!--<lable class="white mr-1">Buscar</lable>
+                            <input type="text" value="" name="" id="txtFiltro" class="input">-->
+            <div class="float-right mr-2">
+
+                <div id="menu_right_icons">
+                    <div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+                    <div class="avatar_cont"><img src="" id="avatar_img"></div>
+                </div>
+
+            </div>
+
+            <div id="avatar_container" style="margin-right: 100px;">
+
+                <div class="popr-box" data-box-id="2">
+                    <a href="perfil_admin.html">
+                        <div class="popr-item" id="">Ver Perfil</div>
+                    </a>
+                    <a href="/cambiar_clave_i.html" >
+                        <div class="popr-item" id="">Cambiar clave</div>
+                    </a>
+                    <a href="/public/index.html" onclick="localStorage.clear();">
+                        <div class="popr-item">Cerrar Sesion</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div style="clear:both; margin-bottom: 20px;"></div>
+    <div class="fondonav">
+        <nav>
+            <ul>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Preguntas frecuentes</button>
+                    <div class="dropdown-content">
+                        <a class="color_text" href="registro_pregunta.html">Registrar pregunta frecuente</a>
+                        <a class="color_text" href="listar_pregunta.html">Listar pregunta frecuente</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Etiquetas</button>
+                    <div class="dropdown-content">
+                        <a class="color_text" href="registrar_etiqueta.html">Registrar etiqueta</a>
+                        <a class="color_text" href="lista_etiquetas.html">Lista de etiquetas</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Usuarios y solicitudes</button>
+                    <div class="dropdown-content">
+                        <a class="color_text" href="listar_solicitudes.html">Lista de solicitudes</a>
+                        <a class="color_text" href="listar_usuarios.html">Lista de usuarios</a>
+                        <<<<<<< HEAD
+                        <a class="color_text" href="listar_trasacciones.html">Lista de transacciones</a>
+                        =======
+                        <a class="color_text" href="listar_trasacciones.html">Lista de transacciones</a>
+
+                        >>>>>>> 00bbd67b57b52995eb33ef2adb5483d9408478d0
+                    </div>
+                </div>
+            </ul>
+        </nav>
+
+
+
+    </div>
+</header>
+
+    <main>
+
+        <h1>Lista de etiquetas</h1>
+
+        <section>
+            <div class="tbl-header">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th class="padding border-right">Nombre</th>
+                            <th class="padding border-right">Modificar</th>
+                            <th class="padding border-right">Eliminar</th>
+
+
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbl-content">
+                <table cellpadding="0" cellspacing="0" border="0" id='tbl_etiquetas'>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="./index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="./faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<script src="/public/js/admin/servicio_admin.js"></script>
+
+<script src="js/transacciones/servicio_transaccion.js"></script>
+<script src="/public/js/etiquetas/servicio_etiquetas.js"></script>
+<script src="/public/js/etiquetas/controlador_listar_etiquetas.js"></script>
+
+<script src="/public/js/admin/controlador_avatar_admin.js"></script>
+<script src="/public/js/popmenu/popr.js"></script>
+
+
+</html>

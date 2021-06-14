@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar padre de familia</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/registrar_pf.css">
+    <link rel="stylesheet" href="./css/banner_rce.css">
+    <link rel="stylesheet" href="/public/css/popr.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main_header_perfil">
+        <nav>
+            <img class="img_logo" src="/public/images/logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <div class="float-right middle2">
+                <!--<lable class="white mr-1">Buscar</lable>
+                                            <input type="text" value="" name="" id="txtFiltro" class="input">-->
+                <div class="float-right mr-2">
+
+                    <div id="menu_right_icons">
+                        <div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+                        <div class="avatar_cont"><img src="" id="avatar_img"></div>
+                    </div>
+
+                </div>
+
+                <div id="avatar_container" style="margin-right: 100px;">
+                    <div class="popr-box" data-box-id="2">
+                        <a href="/public/padrefamilia/perfil_padre_familia.html">
+                            <div class="popr-item" id="">Ver perfil</div>
+                        </a>
+
+                        <a href="/public/modificar_pf.html">
+                            <div class="popr-item" id="">Editar perfil</div>
+                        </a>
+
+                        <a href="/public/padrefamilia/listar_evaluaciones.html">
+                            <div class="popr-item" id="">Ver evaluaciones</div>
+                        </a>
+
+                        <a href="/public/cambiar_clave_i.html">
+                            <div class="popr-item" id="">Cambiar clave</div>
+                        </a>
+                        <a href="/public/index.html" onclick="localStorage.clear();">
+                            <div class="popr-item">Cerrar Sesion</div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="section">
+
+            <h1 class="d1 color_text title_center mb-1">Modificar padre de familia</h1>
+
+            <div class="title_center">
+
+                <figure class="image_holder">
+                    <img src="/public/images/photo_placeholder.jpg" alt="seleccionar imagen" id="image_preview">
+
+                </figure>
+
+                <button type="button" id="btnSeleccionarImagen" class="boton_imagen">Subir imagen</button>
+            </div>
+            <form id="frm_registro_pf" style="margin-top:20px;">
+                <div class="wrapper">
+                    <section class="grid">
+                        <div>
+                            <label class="color_text" for="txt_nombre">Nombre</label>
+                            <input type="text" id="txt_nombre" placeholder="Escriba el nombre de usuario">
+                        </div>
+                        <div>
+                            <label class="color_text" for="txt_snombre">Segundo nombre</label>
+                            <input type="text" id="txt_snombre" placeholder="Escriba el segundo nombre del usuario">
+                        </div>
+                        <div>
+                            <label class="color_text" for="txt_papellido">Primer apellido</label>
+                            <input type="text" id="txt_papellido" placeholder="Escriba el primer apellido del usuario">
+                        </div>
+                        <div>
+                            <label class="color_text" for="txt_sapellido">Segundo apellido</label>
+                            <input type="text" id="txt_sapellido" placeholder="Escriba el segundo apellido del usuario">
+                        </div>
+
+                        <div>
+                            <label class="color_text" for="slt_tipo_id">Tipo de identificación</label>
+                            <select class="form-select" id="slt_tipo_id">
+                                <option value="">--Seleccione una opción--</option>
+                                <option value="Nacional">Nacional</option>
+                                <option value="DIMEX">DIMEX</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="color_text" for="txt_id">Identificación</label>
+                            <input type="number" min="0" id="txt_id" placeholder="Escriba la identificación">
+                        </div>
+
+                        <div>
+                            <label class="color_text" for="txt_correo">Correo electrónico</label>
+                            <input type="text" id="txt_correo" placeholder="Escriba el correo del usuario">
+                        </div>
+                        <div>
+                            <label class="color_text" for="txt_telefono">Teléfono</label>
+                            <input type="number" min="0" id="txt_telefono" placeholder="Escriba el número de teléfono">
+                        </div>
+
+
+                        <div>
+                            <label class="color_text" for="slt_provincias">Provincia</label>
+                            <select class="form-select" id="slt_provincias">
+                                <option value="">--Provincia--</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <label class="color_text" for="slt_cantones">Cantón</label>
+                            <select class="form-select" id="slt_cantones">
+                                <option value="">--Cantón--</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <label class="color_text" for="slt_distritos">Distrito</label>
+                            <select class="form-select" id="slt_distritos">
+                                <option value="">--Distrito--</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="color_text" for="cantidad_hijos">Cantidad de hijos</label>
+                            <input type="number" min="0" id="cantidad_hijos" placeholder="Escriba el número de hijos">
+                        </div>
+                        <div>
+                            <label class="color_text" for="txt_direccion">Dirección exacta</label>
+                            <textarea type="text" id="txt_direccion" placeholder="Escriba la dirección exacta" rows="3"
+                                style="height: 108px;"></textarea>
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="btn_enviar center">
+                    <button type="button" id="btn_registrar">Guardar</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="./index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="./faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/transacciones/servicio_transaccion.js"></script>
+    <script src="js/padres_de_familia/servicio_padrefamilia.js"></script>
+    <script src="js/ubicacion/provincias.js"></script>
+    <script src="js/ubicacion/cantones.js"></script>
+    <script src="js/ubicacion/distritos.js"></script>
+    <script src="/public/js/padres_de_familia/controlador_avatar_pf.js"></script>
+    <script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script>
+    <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script src="js/ubicacion/controlador_ubicacion.js"></script>
+    <script src="js/servicio_imagen.js"></script>
+    <script src="js/padres_de_familia/controlador_modificar_pf.js"></script>
+    <script src="/public/js/popmenu/popr.js"></script>
+
+</body>
+
+</html>

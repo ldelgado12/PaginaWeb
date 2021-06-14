@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header_principal">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="inmobiliaria.html">Inmobiliaria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="banner">
+    </section>
+
+    <main>
+
+        <section id="contacto">
+
+            <div class="columna_izq">
+                <h1>
+                    Contactenos
+                </h1>
+                <p>
+                    En Cedro nos interesa conocer sus opiniones e inquietudes para ello puede enviarnos
+                    un correo rellenando la informacion del formulario de contacto.
+                </p>
+                <p>
+                    Le responderemos tan pronto como nos sea posible.
+                </p>
+
+            </div>
+
+            <form class="columna_derecha" id="frm_contacto">
+                <div>
+                    <label for="txt_nombre"> Nombre</label>
+                    <input type="text" id="txt_nombre">
+                </div>
+
+                <div>
+                    <label for="txt_correo"> Correo Electronico</label>
+                    <input type="email" id="txt_correo">
+                </div>
+
+
+                <div>
+                    <fieldset id="fieldset_sexo">
+                        <legend>Sexo</legend>
+                        <input type="radio" name="rbt_sexo" id="rbt_masculino" value="Masculino">
+                        <label for="rbt_masculino">Masculino</label>
+                        <input type="radio" name="rbt_sexo" id="rbt_femenino" value="Femenino">
+                        <label for="rbt_femenino">Femenino</label>
+                    </fieldset>
+                </div>
+
+
+                <div>
+                    <label for="txt_comentario">Comentario</label>
+                    <textarea id="txt_comentario"></textarea> <!-- Aqui es importante no hacer un espacio con Enter -->
+                </div>
+
+                <button type="button" id="btn_enviar">Enviar</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    <script src="js/controlador_contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+</body>
+
+</html>

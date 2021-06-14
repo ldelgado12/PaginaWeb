@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="lightbox.css" rel="stylesheet">
+    <title>KAMELOT</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: 'Rubik', sans-serif;
+            width: 100%;
+        }
+        .header {
+            width: 100%;
+            height: 250px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        }
+        .banner{
+          height: 250px;
+          background-image: url('fondo.png');
+          background-size: cover;
+          background-position: bottom;
+
+        }
+        .logo {
+          width: 150px;
+          height: 213px;
+          margin-left: auto;
+          margin-right: auto;
+
+        }
+        .wrapper {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 900px;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+            
+        }
+
+          .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+          img {
+            border-radius: 5px 5px 0 0;
+        }
+
+          .container {
+            padding: 2px 16px;
+        }
+        
+        .main {
+          margin-top: 50px;
+          width: 300px;
+          float: left;  
+
+        }
+        .margin-left{
+          margin-left: 50px;
+        }
+        .ml {
+          margin-left: 150px;
+        }
+        .margin-bottom {
+          margin-bottom: 30px;
+        }
+
+        .footer {
+          height: 120px;
+          background-color: #000000;
+        }  
+        a:visited 
+        {
+          text-decoration: none; 
+          decoration: none; 
+        }
+        a {
+          text-decoration: none;
+          color: #000000;
+        }
+        </style>
+</head>
+<body>
+    <header class="header banner">
+        <div class="logo">
+            <img src="LOGO-SIN-FONDO.png" width="150" height="213" alt="Logo Kamelot"/>
+        </div>
+    </header>
+    <div class="wrapper">
+    <a href="card_dambro.jpg" data-lightbox="info.html"> 
+    <div class="main">
+        <div class="card">
+            <img src="Dambro.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Luis Diego D'Ambrosio</b></h4> 
+              <p>Coordinador</p> 
+            </div>
+          </div>
+    </div>
+    </a>
+    <a href="card_fran.png" data-lightbox="info.html"> 
+    <div class="main margin-left">
+        <div class="card">
+            <img src="Fran.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Francisco Sandoval</b></h4> 
+              <p>Soporte 2</p> 
+            </div>
+          </div>
+    </div>
+    </a>
+    <a href="card_migue.jpg" data-lightbox="info.html">
+    <div class="main margin-left">
+        <div class="card">
+            <img src="Migue.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Miguel Gutierrez</b></h4> 
+              <p>Analista QA 2</p> 
+            </div>
+          </div>
+    </div>
+    </a>
+    <div style="clear:both;"></div>
+    <a href="card_lucho.jpg" data-lightbox="info.html">
+    <div class="main ml">
+        <div class="card">
+            <img src="Lucho.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Luis Carlos Delgado</b></h4> 
+              <p>Analista QA 1</p> 
+            </div>
+          </div>
+    </div>
+    </a>
+    <a href="card_alex.jpg" data-lightbox="info.html">
+    <div class="main margin-left">
+        <div class="card">
+            <img src="Alex.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>Alexander Ramirez</b></h4> 
+              <p>Soporte 1</p> 
+            </div>
+          </div>
+    </div>
+  </div>
+</a>
+  <div style="clear:both;" class="margin-bottom"></div> 
+    <footer class="footer">
+      <p style="color:#fff; text-align:center; padding-top: 40px;">&copy; Sitio Desarrollado Por Kamelot</p>
+    </footer>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

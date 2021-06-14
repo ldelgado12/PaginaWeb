@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+    <link rel="stylesheet" href="/public/css/solicitudes.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/registro_ce.css">
+    <link rel="stylesheet" href="./css/popr.css">
+    <link rel="stylesheet" href="./css/tabla_centros/listar_centros.css">
+    <title>Lista centros educativos</title>
+</head>
+
+<body>
+
+    <header class="main_header">
+        <nav>
+            <img class="img_logo" src="./images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <div class="float-right middle">
+                <!--<lable class="white mr-1">Buscar</lable>
+                        <input type="text" value="" name="" id="txtFiltro" class="input">-->
+                <div class="float-right mr-2 mt-4">
+
+                    <div id="menu_right_icons">
+                        <div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+                        <div class="avatar_cont"><img src="" id="avatar_img"></div>
+                    </div>
+
+                </div>
+
+                <div id="avatar_container" style="margin-right: 100px;">
+
+                    <div class="popr-box" data-box-id="2">
+                        <a href="perfil_padre_familia.html">
+                            <div class="popr-item" id="">Ver Perfil</div>
+                        </a>
+
+                        <a href="#">
+                            <div class="popr-item" id="">Ajustes</div>
+                        </a>
+
+                        <a href="index.html" onclick="localStorage.clear();">
+                            <div class="popr-item">Cerrar Sesión</div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div style="clear:both; margin-bottom: 20px;"></div>
+        <div class="fondonav">
+            <nav>
+                <ul>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h1 class="h1">Lista de centros educativos</h1>
+
+        <div id='filter_space'>
+            <lable class="black mr-1">Buscar:</lable>
+            <input type="text" value="" name="" id="txtFiltro" class="input">
+        </div>
+
+        <section>
+            <div class="tbl-header">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th class="padding border-right">Logo</th>
+                            <th class="padding border-right">Nombre</th>
+                            <th class="padding border-right">Correo</th>
+                            <th class="padding border-right">Teléfono</th>
+                            <th class="padding border-right">Tipo</th>
+                            <th class="padding border-right">Nivel</th>
+                            <th class="padding border-right">Provincia</th>
+                            <th class="padding">Canton</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbl-content">
+                <table cellpadding="0" cellspacing="0" border="0" id='tbl_centroe'>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="./index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="./faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/transacciones/servicio_transaccion.js"></script>
+    <script src="./js/padres_de_familia/servicio_padrefamilia.js"></script>
+    <script src="./js/padres_de_familia/controlador_avatar_pf.js"></script>
+    <script src="js/centro_educativo/servicio_ce.js"></script>
+    <script src="js/centro_educativo/controlador_listar_centroe.js"></script>
+    <script src="js/realizarbusqueda.js"></script>
+    <script src="js/popmenu/popr.js"></script>
+
+</body>
+
+</html>

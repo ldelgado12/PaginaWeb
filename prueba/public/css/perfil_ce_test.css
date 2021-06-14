@@ -1,0 +1,143 @@
+form {
+    margin-left: 50px;
+}
+
+.input {
+    width: 150px;
+    height: 35px;
+    border: #6D6D6D solid 1px;
+    border-radius: 5px;
+}
+
+.lable {
+    font-size: 18px;
+}
+
+.input_form {
+    display: block;
+    width: 200px;
+    height: 35px;
+    margin-bottom: 20px;
+    border: #48dbfb solid 1px;
+}
+
+.error_input{
+    border: 2px solid #d63031;
+}
+
+.white {
+    color: #ffffff;
+    font-size: 18px;
+}
+.descripcion {
+    width: 350px;
+    height: 150px;
+}
+
+/* Estilos de formulario */
+
+#perfil {
+    display: flow-root;  /*Esto hace que los hijos sigan el mismo patron que el padre*/
+    padding-top: 30px;
+}
+
+.columna_izq{
+    width: 45%;
+    float: left;
+}
+
+.columna_derecha{
+    width: 45%;
+    float: right;
+}
+
+#perfil .columna_izq{
+    text-align: center;
+}
+
+#perfil .columna_izq h1, #perfil .columna_derecha h1{
+    font-size: 26px;
+    margin: 25px 0px 25px 0px;
+}
+
+#perfil .columna_izq p{
+    margin-bottom: 25px;
+    line-height: 22px;
+}
+
+#submenu_centro{
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submenu_centro h1{
+    margin-bottom: 10px;
+}
+
+#submenu_centro button{
+    background-color: #f27232;
+    text-decoration: none;
+}
+.mr-1 {
+    margin-right: 20px;
+}
+.mr-2 {
+    margin-right: 50px;
+}
+
+.ml-1 {
+    margin-left: 20px;
+}
+
+.ml-2 {
+    margin-left: 40px;
+}
+.mt-1 {
+    margin-top: 40px;
+}
+.mt-2 {
+    margin-top: 20px;
+}
+.mt-3 {
+    margin-top: 90px;
+}
+.mt-4 {
+    margin-top: 10px;
+}
+.mb-1 {
+    margin-bottom: 20px;
+}
+
+.fondonav{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 10px 17px -5px rgba(128,128,128,1);
+}
+
+
+ul li {
+
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-family: arial;
+    font-size: 16px;
+    padding: 10px 10px;
+    display: block;
+    text-align: center;
+
+}
+
+ul li a:hover {
+    color: #f27232;
+}

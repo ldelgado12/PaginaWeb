@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Lista de evaluaciones</title>
+    <meta charset="utf-8"> <!-- para permitir el uso de chars especiales -->
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+    <link rel="stylesheet" href="/public/css/perfil_ce.css">
+    <link rel="stylesheet" href="/public/css/popr.css">
+    <link rel="stylesheet" href="/public/css/citas.css">
+</head>
+
+<body>
+
+    <header class="main_header_perfil">
+        <nav>
+            <img class="img_logo" src="/public/images/logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <div class="float-right middle2">
+                <!--<lable class="white mr-1">Buscar</lable>
+                                    <input type="text" value="" name="" id="txtFiltro" class="input">-->
+                <div class="float-right mr-2">
+
+                    <div id="menu_right_icons">
+                        <div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+                        <div class="avatar_cont"><img src="" id="avatar_img"></div>
+                    </div>
+
+                </div>
+
+                <div id="avatar_container" style="margin-right: 100px;">
+                    <div class="popr-box" data-box-id="2">
+                        <a href="/public/padrefamilia/perfil_padre_familia.html">
+                            <div class="popr-item" id="">Ver perfil</div>
+                        </a>
+
+                        <a href="/public/modificar_pf.html">
+                            <div class="popr-item" id="">Editar perfil</div>
+                        </a>
+
+                        <a href="/public/padrefamilia/listar_evaluaciones.html">
+                            <div class="popr-item" id="">Ver evaluaciones</div>
+                        </a>
+
+                        <a href="/public/cambiar_clave_i.html">
+                            <div class="popr-item" id="">Cambiar clave</div>
+                        </a>
+                        <a href="/public/index.html" onclick="localStorage.clear();">
+                            <div class="popr-item">Cerrar Sesion</div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <h1 style="text-align:center;" class="h1">Evaluaciones registradas</h1>
+
+    <table id="tbl_ratings" class="tabla_info">
+        <thead>
+            <tr>
+                <th>Nombre del centro</th>
+                <th>Comentario</th>
+                <th>Rating</th>
+                <th>Fecha</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="/public/index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="/public/faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="/public/contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/public/js/padres_de_familia/servicio_padrefamilia.js"></script>
+    <script src="/public/js/padres_de_familia/controlador_avatar_pf.js"></script>
+
+    <script src="/public/js/popmenu/popr.js"></script>
+
+    <script src="/public/js/rating/servicio_rating.js"></script>
+    <script src="/public/js/rating/controlador_listar_rating_pf.js"></script>
+
+
+</body>
+
+
+</html>

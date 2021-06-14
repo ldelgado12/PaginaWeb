@@ -1,0 +1,35 @@
+.grupo_boton_radio {
+    clear: both;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    right: 0px;
+    left: 190px;
+}
+.boton_radio {
+    position: absolute;
+    left: -9999em;
+    top: -9999em;
+}
+.boton_radio + label {
+    float: left;
+    cursor: pointer;
+    border: none;
+    margin-right: -1px;
+    color: #fff;
+    background-color: #f27232;
+    padding: 6px 12px;
+    font-size: 18px;
+    height: 30px;
+}
+.boton_radio + label:first-of-type {
+    border-radius: 5px 0 0 5px;
+}
+.boton_radio + label:last-of-type {
+    border-radius: 0 5px 5px 0;
+}
+.boton_radio:checked + label {
+    background-color: #e2e2e2;
+    color: black;
+    font-weight: bold;
+}

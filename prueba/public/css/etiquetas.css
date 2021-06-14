@@ -1,0 +1,96 @@
+.etiqueta{
+
+margin-left: 33%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+height: 100%;
+width: 385px;
+margin-bottom: 20px;
+padding-top: 5px;
+padding-left: 25px;
+padding-right: 25px;
+margin-top: 30px;
+}
+
+.registro{
+    margin-top: 30px;
+    height: 100%;
+    margin-left: 30%;
+
+}
+
+h1{
+	font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2f3640;
+    text-align: center;
+}
+
+#tbl_etiquetas {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tbody tr td {
+	border-bottom: #00ced4 solid 2px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+	
+tbody tr:hover {
+	background-color: #a4b0be;
+		
+	}
+	
+tr:nth-child(even) {
+  	background-color: #f1f2f6;
+		
+}
+
+.etiqueta_header{
+    margin-top: 30px;
+}
+.middle2 {
+	margin-top: 40px;;
+	margin-bottom: auto;
+}
+
+.form_backgorund {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.75);
+    height: 70%;
+    width: 385px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 30px;
+}
+
+form#frm_noticias {
+    padding: 0px;
+}
+
+form#frm_noticias input.form-control{
+    text-align: center;
+    padding: 0px;
+    width: 300px
+}
+
+div.registro{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.label_name{
+    margin-bottom: 10px;
+}
+#btn_editar_noticia{
+    margin-left: 40px;
+}

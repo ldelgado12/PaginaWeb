@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Centro Educativo</title>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+    <link rel="stylesheet" href="/public/css/perfil_ce.css">
+    <link rel="stylesheet" href="/public/css/activdad.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/popr.css">
+    <link rel="stylesheet" href="/public/css/blogcards.css">
+	<link rel="stylesheet" href="/public/css/menu_nav/dropdown.css">
+    <link rel="stylesheet" href="/public/scss/style.scss">
+    <link rel="stylesheet" href="/public/css/actividad/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+
+<style type="text/css">
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    .wrapper {
+        height: 550px;
+        width: 100%;
+    }
+
+    .imagencentro {
+        float: left;
+        margin-left: 100px;
+    }
+
+    .card {
+        background-color: #EFEFEF;
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+        float: left;
+        margin-left: 40px;
+    }
+
+    .card2 {
+        background-color: #EFEFEF;
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+        float: left;
+        margin-left: 40px;
+    }
+
+    .titulo {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: #2f3640;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .hr {
+        margin-top: 20px;
+        width: 80%;
+        border: solid #192a56 1px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info {
+        margin-left: 40px;
+    }
+
+    .lable_nuevo {
+        display: block;
+    }
+
+    .int_nuevo {
+        background-color: #EFEFEF;
+        font-family: Nunito, 'Montserrat', sans-serif;
+        border: 0px;
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    .cerrar_sesion2 {
+        padding: 11px;
+        background-color: #f27232;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .cerrar_sesion2:hover {
+        padding: 11px;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #40739e;
+    }
+
+    .margen {
+        margin-bottom: 20px;
+    }
+
+    .centrado {
+        margin-left: 500px;
+    }
+
+    .label_citas {
+        width: 150px;
+        height: 35px;
+        border: 1px solid #48dbfb;
+        border-radius: 5px;
+    }
+
+    .ml-citas {
+        margin-left: 5px;
+    }
+
+    .area {
+        background-color: #EFEFEF;
+        font-family: Nunito, 'Montserrat', sans-serif;
+        border: 0px;
+        font-size: 16px;
+        margin-left: 5px;
+        width: 250px;
+        position: relative;
+        top: 28px;
+    }
+
+    #actividades {
+        margin-bottom: 50px;
+    }
+
+    .middle2 {
+        margin-top: 30px;
+    }
+
+    .margin-top {
+        margin-top: 120px;
+    }
+    .mr-top{
+        margin-top: 20px;
+    }
+    .mb-bottom{
+        margin-bottom: 20px;
+    }
+    .el_area{
+        width: 320px;
+        height: 80px;
+    }
+</style>
+
+<body>
+
+    <header class="main_header">
+        <nav>
+            <img class="img_logo" src="/public/images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <div class="float-right middle2">
+                <!--<lable class="white mr-1">Buscar</lable>
+                                                <label type="text" value="" name="" id="txtFiltro" class="label">-->
+                <div class="float-right mr-2 mt-4">
+
+                    <div id="menu_right_icons">
+                        <div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+                        <div class="avatar_cont"><img src="" id="avatar_img"></div>
+                    </div>
+
+                </div>
+
+                <div id="avatar_container" style="margin-right: 100px;">
+                    <div class="popr-box" data-box-id="2">
+                        <a href="/public/padrefamilia/perfil_padre_familia.html">
+                            <div class="popr-item" id="">Ver perfil</div>
+                        </a>
+
+                        <a href="/public/modificar_pf.html">
+                            <div class="popr-item" id="">Editar perfil</div>
+                        </a>
+
+                        <a href="/public/padrefamilia/listar_evaluaciones.html">
+                            <div class="popr-item" id="">Ver evaluaciones</div>
+                        </a>
+
+                        <a href="/public/cambiar_clave_i.html">
+                            <div class="popr-item" id="">Cambiar clave</div>
+                        </a>
+                        <a href="/public/index.html" onclick="localStorage.clear();">
+                            <div class="popr-item">Cerrar Sesion</div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+		<div style="clear:both; margin-bottom: 20px;"></div>
+		<div class="fondonav">
+			<nav>
+				<ul>
+
+					<div class="dropdown">
+						<button class="dropbtn">Centros educativos</button>
+						<div class="dropdown-content">
+							<a class="color_text" href="/public/padrefamilia/listar_centroe.html">Listar centros</a>
+							<a class="color_text" href="/public/padrefamilia/tablero_centroeducativo.html">Perfil del centro</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">Citas y servicios</button>
+						<div class="dropdown-content">
+							<a class="color_text" href="/public/centroeducativo/citas.html">Registrar cita</a>
+							<a class="color_text" href="/public/listar_tablero_servicios.html">Lista de servicios</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">Evaluaciones</button>
+						<div class="dropdown-content">
+							<a class="color_text" href="/public/centroeducativo/rating_centro.html">Dejar evaluación</a>
+							<a class="color_text" href="/public/centroeducativo/lista_ratings_centro.html">Ver evaluaciones del centro</a>
+						</div>
+					</div>
+
+				</ul>
+			</nav>
+
+
+
+		</div>
+	</header>
+
+    <main class="margin-top">
+
+        <section id='submenu_centro'>
+            <h1 class="h1 margen">Información adicional del centro:</h1><br>
+            <a class="cerrar_sesion2 ml-1" onClick="document.getElementById('news_cards').scrollIntoView();">Ver
+                noticias</a>
+            <a class="cerrar_sesion2 ml-1" onClick="document.getElementById('actividades_cards').scrollIntoView();">Ver
+                actividades</a>
+        </section>
+
+        <!-- Seccion de perfil centro. -->
+
+        <div class="wrapper" id="perfil">
+            <div class="imagencentro">
+                <label for="imagen_perfil">
+                    <img src="" id="imagen_perfil" width="190px">
+                </label>
+            </div>
+            <div class="card">
+                <h1 class="titulo">Informacion General</h1>
+                <div class="info">
+                    <lable>Nombre del Centro:</lable>
+                    <label class="int_nuevo" id="txt_nombre_centro"></label>
+                    <br><br>
+                    <label>Correo electrónico:</label>
+                    <label class="int_nuevo" id="txt_correo"></label>
+                    <br><br>
+                    <label>Teléfono:</label>
+                    <label class="int_nuevo" id="txt_telefono"></label>
+                    <br><br>
+                    <label for="txt_fax">Fax:</label>
+                    <label class="int_nuevo" type="text" id="txt_fax"></label>
+                    <br><br>
+                    <label for="txt_sitioweb">Sitio web:</label>
+                    <label class="int_nuevo" type="text" id="txt_sitioweb"></label>
+                </div>
+                <hr class="hr">
+                <h1 class="titulo">Ubicación</h1>
+                <div class="info">
+                    <label for="txt_provincia">Provincia:</label>
+                    <label class="int_nuevo" type="text" id="txt_provincia"></label>
+                    <br><br>
+                    <label for="txt_canton">Cantón:</label>
+                    <label class="int_nuevo" type="text" id="txt_canton"></label>
+                    <br><br>
+                    <label for="txt_distrito">Distrito:</label>
+                    <label class="int_nuevo" type="text" id="txt_distrito"></label>
+                    <br>
+                    <label for="txt_direccion">Dirección:</label>
+                    <textarea class="area" id="txt_direccion"></textarea>
+                    <!-- Aqui es importante no hacer un espacio con Enter -->
+                </div>
+            </div>
+            <div class="card2">
+                <h1 class="titulo">Oferta académica:</h1>
+                <div class="info">
+                    <label for="txt_tipo_centro">Tipo de centro:</label>
+                    <label class="int_nuevo" type="text" id="txt_tipo_centro"> </label>
+                    <br><br>
+                    <label for="txt_nivel">Nivel de centro:</label>
+                    <label class="int_nuevo" type="text" id="txt_nivel"></label>
+                    <br><br>
+                    <label for="txt_refhistorica">Referencia histórica:</label><br>
+                    <textarea class="int_nuevo mr-top el_area" id="txt_refhistorica"></textarea>
+                </div>
+                <hr class="hr">
+            </div>
+        </div>
+
+        <!-- Seccion de noticias. -->
+        <div id="news_cards">
+
+            <h1 class="h1">Noticias del centro:</h1>
+
+        </div>
+
+
+        <template id="tmpl_news">
+            <div class="blog-card">
+
+                <div class="meta">
+                    <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
+                </div>
+
+                <div class="description">
+                    <h1 id='h1_card'></h1>
+                    <h2 id='h2_card'></h2>
+                    <p id='p_card'></p>
+                    <p class="read-more">
+                        <a href="">Leer más</a>
+                    </p>
+                </div>
+            </div>
+        </template>
+
+        <!-- Seccion de actividades cards. -->
+        <div id="actividades_cards">
+
+            <h1 class="h1">Actividades del centro:</h1>
+
+        </div>
+
+
+        <template id="tmpl_actividades">
+
+            <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="width: 360px; overflow: hidden; border-radius: 1px;">
+
+                <img id="img_actividad" src="" alt="Man with backpack" class="d-block w-full" style="height:200px;">
+
+                <div class="px-2 py-2" style="height:150px;">
+                    <p class="mb-0 small font-weight-medium text-uppercase mb-1 text-muted lts-2px">
+                    </p>
+
+                    <h1 id="h1_actividad" class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                    </h1>
+
+                    <p id="p_actividad" class="mb-1">
+                    </p>
+
+                </div>
+
+            </div>
+
+        </template>
+
+
+
+
+    </main>
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="../index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="/public/faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="../contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="/public/js/padres_de_familia/servicio_padrefamilia.js"></script>
+    <script src="/public/js/padres_de_familia/controlador_avatar_pf.js"></script>
+    <script src="/public/js/centro_educativo/servicio_ce.js"></script>
+    <script src="/public/js/centro_educativo/controlador_tablero_ce.js"></script>
+    <script src="/public/js/noticias/servicio_noticias.js"></script>
+    <script src="/public/js/noticias/controlador_listar_noticias_tablero.js"></script>
+    <script src="/public/js/actividades/servicio_actividad.js"></script>
+    <script src="/public/js/actividades/controlador_listar_actividad_tablero.js"></script>
+    <script src="/public/js/popmenu/popr.js"></script>
+</body>
+
+</html>

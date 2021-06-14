@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Perfil Centro Educativo</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/general.css">
+        <link rel="stylesheet" href="./css/perfil_ce.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    </head>
+    <style type="text/css">
+        .slideshow-container{
+            max-width: 1000px;
+            position:relative;
+            margin:auto;
+        }
+        .mySlides{
+            display:none;
+        }
+        .prev, .next{
+            cursor:pointer;
+            position:absolute;
+            top:50%;
+            width:auto;
+            margin-top:-22px;
+            padding:16px;
+            color:white;
+            font-weight:bold;
+            font-size:18px;
+            transition:0.6s ease;
+            border-radius:0 3px 3px 0;
+        }
+        .next{
+            right:0;
+            border-radius:3px 0 0 3px;
+        }
+        .prev:hover, .next:hover{
+            background-color:rgba(0,0,0,0.8);
+        }
+        
+        .fade{
+            -webkit-animation-name:fade;
+            -webkit-animation-duration:1.5s;
+            animation-name:fade;
+            animation-duration:1.5s;
+        }
+
+        @-webkit-keyframes fade{
+            from{opacity:.4}
+            to{opacity:1}
+        }
+
+        @keyframes fade{
+            from{opacity:.4}
+            to{opacity:1}
+        }
+        .wrapper {
+            height: 800px;
+        }
+        .imagencentro {
+            float: left;
+            margin-left: 100px;  
+        }
+        .card {
+			background-color: #EFEFEF;
+			width: 400px;
+			height: 650px;
+            border-radius: 10px;
+            float: left;
+            margin-left: 40px;
+        }
+
+        .card2 {
+			background-color: #EFEFEF;
+			width: 400px;
+			height: 650px;
+            border-radius: 10px;
+            float: left;
+            margin-left: 40px;
+        }
+        
+		.titulo {
+			font-size: 30px;
+            margin-bottom: 20px;
+	        color: #2f3640;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .hr{
+            margin-top: 20px;
+            width: 80%;
+            border: solid #192a56 1px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .info {
+            margin-left: 40px;
+        }
+        .lable_nuevo {
+            display: block;
+        }
+        
+        .int_nuevo {
+            background-color: #EFEFEF;
+            font-family: Nunito, 'Montserrat', sans-serif;
+            border: 0px;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+    </style>
+<body>
+    <header class="main_header">
+        <nav>
+            <img class="img_logo" src="./images/Logo.png" width="100" height="150" alt="Logo Costa Rica Educa">
+            <div class="float-right middle">
+                <!--<lable class="white mr-1">Buscar</lable>
+                <input type="text" value="" name="" id="txtFiltro" class="input">-->
+                <div class="float-right mr-2 mt-4">
+                    <a href="perfil_centroedu.html" class="registrar_cuenta ml-1">Ver perfil</a>
+                    <a href="index.html" class="cerrar_sesion ml-1" onclick="localStorage.clear();">Cerrar Sesión</a>
+                </div>
+            </div>
+        </nav>
+        <div style="clear:both; margin-bottom: 20px;"></div>
+        <div class="fondonav">
+            <nav>
+                <ul>
+                    <li><a class="color_text" href="registro_noticias.html">Registrar noticias</a></li>
+                    <li><a class="color_text" href="listar_noticias.html">Listar noticias</a></li>
+                    <li><a class="color_text" href="registro_actividad.html">Registro actividad</a></li>
+                    <li><a class="color_text" href="listar_actividad.html">Listar actividad</a></li>
+                    <li><a class="color_text" href="reg_utiles.html">Registrar utiles</a></li>
+                    <li><a class="color_text" href="listar_utiles.html">Listar utiles</a></li>
+                    <li><a class="color_text" href="etiqueta_centroe.html">Asociar etiqueta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!--Slider Start-->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="./images/back1.jpg" style="width:100%">
+ </div>
+ 
+ <div class="mySlides fade">
+        <img src="./images/back2.jpg" style="width:100%">
+ </div>
+ 
+ <div class="mySlides fade">
+        <img src="./images/back3.jpg" style="width:100%">
+ </div>
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!--Slider End-->
+<div class="wrapper" id="perfil">
+    <div class="imagencentro">
+    <label for="imagen_perfil">
+        <img src="" id="imagen_perfil" width="190px">
+    </label>
+    </div>
+    <div class="card">
+        <h1 class="titulo">Informacion General</h1>
+        <div class="info">
+		<lable>Nombre del Centro:</lable>
+        <input class="int_nuevo" id="txt_nombre_centro" readonly="readonly">
+        <br>
+        <label>Correo electrónico:</label>
+        <input class="int_nuevo" id="txt_correo" readonly="readonly">
+        <br>
+        <label>Teléfono:</label>
+        <input class="int_nuevo" id="txt_telefono" readonly="readonly">
+        <br>
+        <label for="txt_sitioweb">Sitio web:</label>
+        <input class="int_nuevo" type="text" id="txt_sitioweb" readonly="readonly">
+        </div>
+        <hr class="hr">
+        <h1 class="titulo">Ubicación</h1>
+        <div class="info">
+        <label for="txt_provincia">Provincia:</label>
+        <input class="int_nuevo" type="text" id="txt_provincia" readonly="readonly">
+        <br>
+        <label for="txt_canton">Cantón:</label>
+        <input class="int_nuevo" type="text" id="txt_canton" readonly="readonly">
+        <br>
+        <label for="txt_distrito">Distrito:</label>
+        <input class="int_nuevo" type="text" id="txt_distrito" readonly="readonly">
+        <br>
+        <label for="txt_direccion">Dirección:</label>
+        <textarea id="txt_direccion" readonly="readonly"></textarea>
+        <!-- Aqui es importante no hacer un espacio con Enter -->
+        </div>
+        <hr class="hr">
+        <h1 class="titulo">Información Legal</h1>
+            <div class="info">
+            <label for="txt_alias">Alias:</label>
+            <input class="int_nuevo" type="text" id="txt_alias" readonly="readonly">
+            <br>
+            <label for="txt_cedjuridica">Cédula Jurídica:</label>
+            <input class="int_nuevo" type="text" id="txt_cedjuridica" readonly="readonly">
+            <br>
+            <label for="txt_nombrecomercial">Nombre comercial:</label>
+            <input class="int_nuevo" type="email" id="txt_nombrecomercial" readonly="readonly">
+            <br>
+            <label for="txt_fechafund">Fecha fundación:</label>
+            <input class="int_nuevo" type="text" id="txt_fechafund" readonly="readonly">
+            </div>
+	</div>
+    <div class="card2">
+            <h1 class="titulo">Nivel Centro:</h1>
+            <div class="info">
+            <label for="txt_tipo_centro">Tipo de centro:</label>
+            <input class="int_nuevo" type="text" id="txt_tipo_centro" readonly="readonly">
+            <br>
+            <label for="txt_nivel">Nivel de centro:</label>
+            <input class="int_nuevo" type="text" id="txt_nivel" readonly="readonly">
+            <br>
+            <label for="txt_refhistorica">Referencia histórica:</label>
+            <input class="int_nuevo" type="text" id="txt_refhistorica" readonly="readonly">
+            <br>
+            <label for="txt_fax">Fax:</label>
+            <input class="int_nuevo" type="text" id="txt_fax" readonly="readonly">
+            </div>
+            <hr class="hr">
+            <h1 class="titulo">Información de contacto</h1>
+            <div class="info">
+            <label for="txt_nombrecontacto">Nombre contacto:</label>
+            <input class="int_nuevo" type="text" id="txt_nombrecontacto" readonly="readonly">
+            <br>
+            <label for="txt_papellido">Primer apellido:</label>
+            <input class="int_nuevo" type="text" id="txt_papellido" readonly="readonly">
+            <br>
+            <label for="txt_sapellido">Segundo apellido:</label>
+            <input class="int_nuevo" type="text" id="txt_sapellido" readonly="readonly">
+            <br>
+            <label for="txt_identificacion">Identificación:</label>
+            <input class="int_nuevo" type="text" id="txt_identificacion" readonly="readonly">
+            <br>
+            <label for="txt_departamento">Departamento:</label>
+            <input class="int_nuevo" type="text" id="txt_departamento" readonly="readonly">
+            <br>
+            <label for="txt_contacto">Teléfono contacto:</label>
+            <input class="int_nuevo" type="text" id="txt_contacto" readonly="readonly">
+            <br>
+            <label for="txt_extcontacto">Extensión contacto:</label>
+            <input class="int_nuevo" type="text" id="txt_extcontacto" readonly="readonly">
+            <br>
+            <label for="txt_correocontacto">Correo contacto:</label>
+            <input class="int_nuevo" type="text" id="txt_correocontacto" readonly="readonly">
+            </div>
+        </div>
+</div>
+<div style="clear:both;"></div>
+<h1 class="h1 color_text">Actividades del Centro Educativo</h1>
+<div class="actividad"></div>
+<h1 class="h1 color_text">Noticias del Centro Educativo</h1>
+<footer class="main_footer">
+    <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+    <nav class="footer_nav mt-2 ml-1">
+        <a href="#">Inicio</a><span class="vertical-line"> | </span>
+        <a href="#">Iniciar Sesión</a><span class="vertical-line"> | </span>
+    </nav>
+</footer>
+    <script src="./js/centro_educativo/slider.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/centro_educativo/servicio_ce.js"></script>
+    <script src="./js/centro_educativo/controlador_perfil_ce.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+
+/*Font*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.error_input{
+    border: 2px solid #d63031;
+}
+
+fieldset {
+    border: 1px solid #dfe6e9;
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos de formulario */
+
+#contacto {
+    display: flow-root;  /*Esto hace que los hijos sigan el mismo patron que el padre*/
+    padding-top: 30px;
+}
+
+.columna_izq{
+    width: 45%;
+    float: left;   
+}
+
+.columna_derecha{
+    width: 45%;
+    float: right;
+}
+
+#contacto .columna_izq{
+    text-align: center;
+}
+
+#contacto .columna_izq h1{
+    font-size: 26px;
+    margin-bottom: 25px; 
+}
+
+#contacto .columna_izq p{
+    margin-bottom: 25px;
+    line-height: 22px;
+}
+
+#contacto #frm_contacto div{
+    margin-bottom: 20px;
+}
+
+#contacto #frm_contacto label{
+    display: inline-block;
+    width: 150px;
+}
+
+#contacto #frm_contacto input[type="text"],#contacto #frm_contacto input[type="email"]{
+    width: 200px;
+    height: 30px;
+    /*border: 1px solid #c3c3c3;*/
+}
+
+#contacto #frm_contacto textarea{
+    width: 200px;
+    height: 100px;
+   /*border: 1px solid #c3c3c3;*/
+}
+
+#contacto #frm_contacto button{
+    background: #2980b9;
+    font-size: 16px;
+    padding: 10px;
+    width: 170px;
+    color: #fff;
+    border-style: none;
+    margin: 0 auto;
+    display: block;
+}
+
+#contacto #frm_contacto button:hover{
+    background: #3498db;
+}
+
+

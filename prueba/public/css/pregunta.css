@@ -1,0 +1,233 @@
+.lable {
+	font-size: 18px;		
+}
+
+.main {
+    margin-bottom: 30px;
+}
+		
+.input {
+	width: 150px;
+	height: 35px;
+	border: #6D6D6D solid 1px;
+	border-radius: 5px;
+}
+
+.middle {
+	margin-top: 80px;;
+	margin-bottom: auto;
+}
+		
+.white {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+#txt_actividad {
+    display: block;
+    width: 350px;
+    height: 100px;
+    margin-bottom: 20px;
+} 
+
+form {
+    margin-left: 50px;
+}
+
+#btn_registrar {
+    background-color: #f27232; 
+    padding: 10px;
+    width: 170px;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+    clear: both;
+}
+#btnSeleccionarImagen {
+	background-color: #f27232;
+    padding: 10px;
+    width: 170px;
+    font-size: 18px;
+    color: #fff;
+   	margin-bottom: 50px;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);    
+}
+
+
+.centrar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tbl_pregunta {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tbody tr td {
+	border-bottom: #00ced4 solid 2px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+	
+tbody tr:hover {
+	background-color: #a4b0be;
+		
+	}
+	
+tr:nth-child(even) {
+  	background-color: #f1f2f6;
+		
+}
+
+.spacer {
+    margin-top: 20px;
+}
+
+.largo {
+    margin-bottom: 10px;
+}
+.mr-1 {
+	margin-right: 20px;
+}
+.mr-2 {
+	margin-right: 50px;
+}
+		
+.ml-1 {
+	margin-left: 20px;
+}
+		
+.ml-2 {
+	margin-left: 40px;
+}
+.mt-1 {
+	margin-top: 40px;
+}
+.mt-2 {
+	margin-top: 20px;
+}
+.mt-3 {
+	margin-top: 90px;
+}
+.mt-4 {
+	margin-top: 10px;
+}
+.mb-1 {
+	margin-bottom: 20px;
+}
+
+.p-t1 {
+    padding-top: 30px;
+}
+
+.input_pregunta {
+    display: block;
+    width: 520px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: #48dbfb solid 1px;
+    font-size: 18px;
+				
+}
+.input_respuesta {
+    display: block;
+    width: 520px;
+    height: 150px;
+    margin-bottom: 20px;
+    border: #48dbfb solid 1px;
+    font-size: 18px;
+    
+				
+}
+.form_control {
+    margin-left: 50px;
+}
+.error_input {
+    border: 2px solid #ED4C67;
+}
+.position-fix{
+	position: fixed;
+	bottom: 0px;
+}
+
+#image_preview{
+    width: 170px;
+    height: 170px;
+    border: 1px solid #48dbfb;
+}
+
+.fondonav{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 10px 17px -5px rgba(128,128,128,1); 
+}
+        
+ul {
+   text-align: right;
+   margin-right: 30px;	
+}
+
+ul li {
+    
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-family: arial;
+    font-size: 16px;
+    padding: 10px 10px;
+    display: block;
+    text-align: center;
+    
+}
+
+ul li a:hover {
+    color: #f27232;
+}
+
+.centro {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_backgorund {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+	box-shadow: 2px 2px 12px 0px rgba(0,0,0,0.75);
+}
+
+.h1-actividad {
+	font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	color: #2f3640;
+	text-align: center;
+}
+
+th {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f27232;
+    vertical-align: middle;
+}

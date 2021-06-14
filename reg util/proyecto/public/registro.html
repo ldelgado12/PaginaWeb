@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/banner_rce.css">
+    <link rel="stylesheet" href="/public/css/registro.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+
+    <title>Registrar Utiles</title>
+</head>
+
+<body>
+
+    <header class="main_header">
+        <nav>
+            <img class="img_logo" src="./images/Logo.png" width="100" height="150" alt="Logo Costa Rica Educa">
+            <div class="float-right middle">
+                <lable class="white mr-1">Buscar</lable>
+                <input type="text" value="" name="" id="txtFiltro" class="input">
+                <div class="float-right mr-2">
+                    <a href="perfil_centroedu.html"><button type="button" class="registrar_cuenta ml-1">Ver
+                            perfil</button></a>
+                    <a href="index.html"><button type="button" class="iniciar_sesion ml-1"
+                            onclick="localStorage.clear();">Cerrar
+                            Sesión</button></a>
+                </div>
+
+                <div>
+                    <a href="reg_utiles.html">Registrar utiles</a>
+                    <a href="registro_noticias.html">Registrar noticia</a>
+                    <a href="listar_actividad.html">Registro actividad</a>
+                    <a href="registro_actividad.html">Registro actividad</a>
+                    <a href="registrar_etiqueta.html">Registrar etiqueta</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="registro_principal">
+            <div class="etiqueta_header">
+                <h1>Registro Utiles</h1>
+            </div>
+            <div>
+                <label for="txt_nombre">Nombre</label>
+                <input type="text" id="txt_nombre">
+            </div>
+
+
+            <div>
+                <label for="slt_tipo">Tipo</label>
+                <select id="slt_tipo">
+                    <option value="">--Seleccione un tipo--</option>
+                    <option value="mep">MEP</option>
+                    <option value="centro_educativo">Centro Educativo</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="slt_ciclo">Ciclo</label>
+                <select id="slt_ciclo">
+                    <option value="">--Seleccione un ciclo--</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for="slt_nivel">Nivel</label>
+                <select id="slt_nivel">
+                    <option value="">--Seleccione un nivel--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+
+                <div>
+                    <label for="ano">Año</label>
+                    <input type="text" id="text_ano" placeholder="Año">
+                </div>
+
+                <form id="util">
+                    <div>
+                        <lable for="txt_util" class="lable">Porfavor ingrese un Util</lable>
+                        <textarea id="txt_util"></textarea>
+                    </div>
+                    <div>
+
+                        <label for="slt_cantidad">Cantidad</label>
+                        <select id="slt_cantidad">
+                            <option value="">--Seleccione una cantidad--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+
+
+                    </div>
+                    <div style="clear:both;"></div>
+                    <button type="button" id="btn_registrar_util">Registrar util</button>
+
+
+                    <div id="tbl_tabla">
+                        <table  align="center">
+                            <thead>
+                                <tr>
+                                    <th>Utiles</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr></tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+
+
+                </form>
+
+                <div style="clear:both;"></div>
+                <button type="button" id="btn_registrar_lista">Registrar Lista</button>
+
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="#">Link 1</a><span class="vertical-line"> | </span>
+            <a href="#">Link 2</a><span class="vertical-line"> | </span>
+            <a href="#">Link 3</a><span class="vertical-line"> | </span>
+            <a href="#">Link 4</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/servicio_utiles.js"></script>
+    <script src="js/controlador_listar.js"></script>
+    <script scr="js/controlador_total.js"></script>
+    <script src="js/controlador_utiles.js"></script>
+
+
+</body>
+
+</html>-

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>
+        Aplicacion MEP
+    </title>
+    <meta charset="utf-8"> <!-- para permitir el uso de chars especiales -->
+
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+    <link rel="stylesheet" href="/public/css/perfil_ce.css">
+    <link rel="stylesheet" href="/public/css/citas.css">
+    <link rel="stylesheet" href="/public/css/menu_nav/dropdown.css">
+    <link rel="stylesheet" href="/public/css/popr.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+
+<body>
+
+
+    <header class="main_header">
+        <nav>
+            <img class="img_logo" src="/public/images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <div class="float-right middle2">
+                <!--<lable class="white mr-1">Buscar</lable>
+                                                                <label type="text" value="" name="" id="txtFiltro" class="label">-->
+                <div class="float-right mr-2 mt-4">
+
+                    <div id="menu_right_icons">
+                        <div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+                        <div class="avatar_cont"><img src="" id="avatar_img"></div>
+                    </div>
+
+                </div>
+
+                <div id="avatar_container" style="margin-right: 100px;">
+                    <div class="popr-box" data-box-id="2">
+                        <a href="/public/padrefamilia/perfil_padre_familia.html">
+                            <div class="popr-item" id="">Ver perfil</div>
+                        </a>
+
+                        <a href="/public/modificar_pf.html">
+                            <div class="popr-item" id="">Editar perfil</div>
+                        </a>
+
+                        <a href="/public/padrefamilia/listar_evaluaciones.html">
+                            <div class="popr-item" id="">Ver evaluaciones</div>
+                        </a>
+
+                        <a href="/public/cambiar_clave_i.html">
+                            <div class="popr-item" id="">Cambiar clave</div>
+                        </a>
+                        <a href="/public/index.html" onclick="localStorage.clear();">
+                            <div class="popr-item">Cerrar Sesion</div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div style="clear:both; margin-bottom: 20px;"></div>
+        <div class="fondonav">
+            <nav>
+                <ul>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Centros educativos</button>
+                        <div class="dropdown-content">
+                            <a class="color_text" href="/public/padrefamilia/listar_centroe.html">Listar centros</a>
+                            <a class="color_text" href="/public/padrefamilia/tablero_centroeducativo.html">Perfil del
+                                centro</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Citas y servicios</button>
+                        <div class="dropdown-content">
+                            <a class="color_text" href="/public/centroeducativo/citas.html">Registrar cita</a>
+                            <a class="color_text" href="/public/listar_tablero_servicios.html">Lista de servicios</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Evaluaciones</button>
+                        <div class="dropdown-content">
+                            <a class="color_text" href="/public/centroeducativo/rating_centro.html">Dejar evaluación</a>
+                            <a class="color_text" href="/public/centroeducativo/lista_ratings_centro.html">Ver
+                                evaluaciones del centro</a>
+                        </div>
+                    </div>
+
+                </ul>
+            </nav>
+
+
+
+        </div>
+    </header>
+
+
+
+    <!-- Seccion de citas. -->
+
+    <section id='citas'>
+
+        <div class="centrado">
+            <form id="frm_citas">
+
+                <!-- Formulario de registro de citas -->
+                <h1 class="h1">Modificar cita con el centro:</h1>
+
+
+                <div>
+                    <label for="razon_cita">Razon de cita:</label>
+                    <input class="input_citas mb-1" type="text" id="razon_cita">
+                </div>
+
+                <div>
+                    <label for="datepicker-13">Seleccionar fecha:</label>
+                    <input class="input_citas mb-1" type="text" id="datepicker-13">
+                </div>
+
+                <div>
+                    <label for="slct_hora">Seleccionar hora:</label>
+                    <select class="input_citas ml-citas" id="slct_hora">
+                        <option value="" selected disabled>Escoja hora disponible:</option>
+                        <option value="9:00" class="time_9">9:00</option>
+                        <option value="10:00" class="time_10">10:00</option>
+                        <option value="11:00" class="time_11">11:00</option>
+                        <option value="12:00" class="time_12">12:00</option>
+                        <option value="13:00" class="time_13">13:00</option>
+                        <option value="14:00" class="time_14">14:00</option>
+                        <option value="15:00" class="time_15">15:00</option>
+                        <option value="16:00" class="time_16">16:00</option>
+                        <option value="17:00" class="time_17">17:00</option>
+                        <option value="18:00" class="time_18">18:00</option>
+                        <option value="19:00" class="time_19">19:00</option>
+                        <option value="20:00" class="time_20">20:00</option>
+                        <option value="21:00" class="time_21">21:00</option>
+                    </select>
+                </div>
+                <br><br>
+                <div>
+                    <button type="button" id="btn_actualizar">Actualizar cita</button>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="#">Link 1</a><span class="vertical-line"> | </span>
+
+            <a href="#">Link 2</a><span class="vertical-line"> | </span>
+            <a href="#">Link 3</a><span class="vertical-line"> | </span>
+            <a href="#">Link 4</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="/public/js/padres_de_familia/servicio_padrefamilia.js"></script>
+    <script src="/public/js/padres_de_familia/controlador_avatar_pf.js"></script>
+    <script src="/public/js/citas/servicio_citas.js"></script>
+    <script src="/public/js/citas/controlador_registrar_citas.js"></script>
+    <script src="/public/js/citas/controlador_modificar_cita.js"></script>
+    <script src="/public/js/popmenu/popr.js"></script>
+</body>
+
+
+</html>

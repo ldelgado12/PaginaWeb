@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="621402cb-457c-4a39-b1c4-5f2814ba540f" name="Default Changelist" comment="Proyecto de cenfo" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>thead</find>
+      <find>text</find>
+      <find>color</find>
+      <find>color:</find>
+      <find>36</find>
+      <find>36%</find>
+      <find>hover</find>
+      <find>nombre</find>
+      <find>profile-card__name</find>
+      <find>correo</find>
+      <find>distrito</find>
+      <find>input</find>
+      <find>section</find>
+      <find>grid</find>
+      <find>pf</find>
+      <find>button</find>
+      <find>col</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1tpRhBwbYbo5s0KeHyOoUdwV6QT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\Git\Kamelot\prueba\public" />
+      <recent name="D:\Documents\Git\Kamelot\prueba\public\js\padres_de_familia" />
+      <recent name="D:\Documents\Git\Kamelot\prueba\public\js" />
+      <recent name="C:\Users\Blaze\Documents\Git\Kamelot\prueba\public\css" />
+      <recent name="C:\Users\Blaze\Documents\Git\Kamelot\prueba\api\componentes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="registro_pf.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/prueba/public/registro_pf.html">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="621402cb-457c-4a39-b1c4-5f2814ba540f" name="Default Changelist" comment="" />
+      <created>1553273090657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553273090657</updated>
+      <workItem from="1553273091929" duration="9113000" />
+      <workItem from="1553467201871" duration="2682000" />
+      <workItem from="1553523552551" duration="435000" />
+      <workItem from="1553524947511" duration="5932000" />
+      <workItem from="1553621474092" duration="599000" />
+      <workItem from="1554574705314" duration="425000" />
+      <workItem from="1554765257454" duration="2424000" />
+      <workItem from="1554771059831" duration="14021000" />
+      <workItem from="1555129964636" duration="5420000" />
+      <workItem from="1555754067081" duration="6743000" />
+      <workItem from="1555825775448" duration="10449000" />
+      <workItem from="1555985905706" duration="16882000" />
+    </task>
+    <task id="LOCAL-00001" summary="Proyecto de cenfo">
+      <created>1623633670875</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623633670875</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="116832000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Proyecto de cenfo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto de cenfo" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623464177589">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1623464177589" />
+    <state x="326" y="172" key="Vcs.Push.Dialog.v2" timestamp="1623633698560">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="326" y="172" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1623633698560" />
+  </component>
+</project>

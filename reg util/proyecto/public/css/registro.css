@@ -1,0 +1,36 @@
+.h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#registro_principal{
+    display: flow-root;  /*Esto hace que los hijos sigan el mismo patron que el padre*/
+    padding-top: 30px;
+    text-align: center;
+    line-height: 22px;
+}
+
+#registro_principal .etiqueta_header h1{
+    font-size: 26px;
+    margin: 25px 0px 25px 0px; 
+}
+
+#tabla{
+    display: flow-root;
+    text-align: center;
+    line-height: 22px;
+}
+
+#util{
+    margin: 25px; 
+}
+
+#btn_registrar_lista {
+    margin: 10px;
+}
+
+#btn_registrar_util{
+    margin: 10px;
+}

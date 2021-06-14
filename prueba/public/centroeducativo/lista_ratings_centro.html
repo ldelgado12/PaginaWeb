@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/general.css">
+    <link rel="stylesheet" href="/public/css/perfil_ce.css">
+    <link rel="stylesheet" href="/public/css/popr.css">
+    <link rel="stylesheet" href="/public/css/menu_nav/dropdown.css">
+    <link rel="stylesheet" href="/public/css/etiquetas.css" type="text/css">
+
+
+    <title>Rating de Centro Educativo</title>
+</head>
+
+<body>
+
+    <header class="main_header">
+        <nav>
+            <img class="img_logo" src="/public/images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <div class="float-right middle2">
+                <!--<lable class="white mr-1">Buscar</lable>
+                                                        <label type="text" value="" name="" id="txtFiltro" class="label">-->
+                <div class="float-right mr-2 mt-4">
+
+                    <div id="menu_right_icons">
+                        <div class="popr" data-id="2"><span class="config">Ajustes</span></div>
+                        <div class="avatar_cont"><img src="" id="avatar_img"></div>
+                    </div>
+
+                </div>
+
+                <div id="avatar_container" style="margin-right: 100px;">
+                    <div class="popr-box" data-box-id="2">
+                        <a href="/public/padrefamilia/perfil_padre_familia.html">
+                            <div class="popr-item" id="">Ver perfil</div>
+                        </a>
+
+                        <a href="/public/modificar_pf.html">
+                            <div class="popr-item" id="">Editar perfil</div>
+                        </a>
+
+                        <a href="/public/padrefamilia/listar_evaluaciones.html">
+                            <div class="popr-item" id="">Ver evaluaciones</div>
+                        </a>
+
+                        <a href="/public/cambiar_clave_i.html">
+                            <div class="popr-item" id="">Cambiar clave</div>
+                        </a>
+                        <a href="/public/index.html" onclick="localStorage.clear();">
+                            <div class="popr-item">Cerrar Sesion</div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+		<div style="clear:both; margin-bottom: 20px;"></div>
+		<div class="fondonav">
+			<nav>
+				<ul>
+
+					<div class="dropdown">
+						<button class="dropbtn">Centros educativos</button>
+						<div class="dropdown-content">
+							<a class="color_text" href="/public/padrefamilia/listar_centroe.html">Listar centros</a>
+							<a class="color_text" href="/public/padrefamilia/tablero_centroeducativo.html">Perfil del centro</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">Citas y servicios</button>
+						<div class="dropdown-content">
+							<a class="color_text" href="/public/centroeducativo/citas.html">Registrar cita</a>
+							<a class="color_text" href="/public/listar_tablero_servicios.html">Lista de servicios</a>
+						</div>
+					</div>
+
+					<div class="dropdown">
+						<button class="dropbtn">Evaluaciones</button>
+						<div class="dropdown-content">
+							<a class="color_text" href="/public/centroeducativo/rating_centro.html">Dejar evaluación</a>
+							<a class="color_text" href="/public/centroeducativo/lista_ratings_centro.html">Ver evaluaciones del centro</a>
+						</div>
+					</div>
+
+				</ul>
+			</nav>
+
+
+
+		</div>
+	</header>
+
+    <h1 class="h1">Promedio evaluaciones de centro:</h1>
+    <p id="p_promedio" style="text-align: center;"></p>
+
+    <h1 class="h1">Lista de evaluaciones:</h1>
+    <table width="800" id="tbl_ratings" class="tabla_info">
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Comentario</th>
+                <th>Rating</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <footer class="main_footer">
+        <p class="white ml-1">&copy; 2019 Kamelot. Todos los derechos reservados.</p>
+        <nav class="footer_nav mt-2 ml-1">
+            <a href="./index.html">Inicio</a><span class="vertical-line"> | </span>
+            <a href="/public/faq.html">FAQ</a><span class="vertical-line"> | </span>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="/public/js/padres_de_familia/servicio_padrefamilia.js"></script>
+    <script src="/public/js/padres_de_familia/controlador_avatar_pf.js"></script>
+
+    <script src="/public/js/rating/servicio_rating.js"></script>
+    <script src="/public/js/padres_de_familia/servicio_padrefamilia.js"></script>
+    <script src="/public/js/rating/controlador_listar_rating.js"></script>
+
+    <script src="/public/js/popmenu/popr.js"></script>
+
+</body>
+
+</html>
